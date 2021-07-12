@@ -38,11 +38,9 @@ class PersonaTest {
 		for(int i= 3;i>0;i--) {
 		int posicion=(int) Math.floor(Math.random()*listaNombres.size());
 		nombre= listaNombres.get(posicion);
-		if(listaNombresObtenidos.contains(nombre)) {
-			i++;
-		}else {
-			listaNombresObtenidos.add(nombre);
-		}
+		listaNombresObtenidos.add(nombre);
+		listaNombres.remove(posicion);
+		
 		}
 	}
 
