@@ -29,7 +29,6 @@ class PersonaTest {
 		String nombre;
 		int posicion=(int) Math.floor(Math.random()*listaNombres.size());
 		nombre= listaNombres.get(posicion);
-		nombre= listaNombres.get(posicion);
 	}
 
 	@Test
@@ -45,7 +44,6 @@ class PersonaTest {
 			listaNombresObtenidos.add(nombre);
 		}
 		}
-		listaNombres.add("Marisa");
 	}
 
 }
